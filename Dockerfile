@@ -1,5 +1,5 @@
 FROM google/cloud-sdk:alpine
-RUN apk --update add openjdk7-jre && gcloud components install beta --quiet 
+RUN apk --update add openjdk11-jre && gcloud components install pubsub-emulator --quiet 
 EXPOSE 8538
 VOLUME /data
 ENTRYPOINT ["gcloud","beta","emulators","pubsub","start","--project=$PROJECT"]
