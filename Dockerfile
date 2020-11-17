@@ -1,4 +1,4 @@
-FROM google/cloud-sdk
+FROM google/cloud-sdk:alpine
 LABEL maintainer="Dmitri Zamysloff <d.zamysloff@dzcs.com>" \
       version="0.1" \
       description="Google Cloud Pub/Sub Emulator"
